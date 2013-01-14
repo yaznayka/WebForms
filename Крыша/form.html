@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Крыша и кровля</title>
+<link rel="stylesheet" type="text/css" href="../view.css" media="all">
+<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.9.2.custom.min.css" />
+
+<script type="text/javascript" src="view.js"></script>
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  
+
+<script type="text/javascript">
+	$(window).load(function () {
+		$( "#slider" ).slider({
+		  value:20,
+		  min: 20,
+		  max: 50,
+		  step: 10,
+		  slide: function( event, ui ) {
+			$( "#element_2" ).text( ui.value );
+		  }
+		});
+		$( "#element_2" ).text( $( "#slider" ).slider( "value" ) );
+	});
+	
+	
+	function hideAll() 
+	{
+		$('#img-container figure').hide();
+	}
+	
+	function drawImg()
+	{
+        var svgE1 = $("#li_1 input:checked");
+		var svgE2 = $("#element_3 option:selected");
+		var svgE3 = $( "#slider" ).slider( "value" );
+		
+		var selector = "#ladderc_"+svgE1.val()+"_"+svgE2.val()+"_"+svgE3;
+				
+		hideAll();
+		
+		//alert(selector);
+		$(selector).show();
+	}
+</script>
+
+</head>
+<body id="main_body" >
+	
+	<div id="form_container">
+	
+		<h1><a>Крыша и кровля</a></h1>
+		<table id="main-table">
+            <tr>
+                <td>
+					<form id="main_form" class="appnitro"  method="post" action="">
+								<div class="form_description">
+						<h2>Крыша и кровля</h2>
+						<p></p>
+					</div>						
+						<ul >
+						
+								<li id="li_1" >
+					<label class="description" for="element_1">Вид крыши </label>
+					<span>
+						<input id="element_1_1" name="element_1" class="element radio" type="radio" value="1" />
+			<label class="choice" for="element_1_1">Односкатная</label>
+			<input id="element_1_2" name="element_1" class="element radio" type="radio" value="2" />
+			<label class="choice" for="element_1_2">Двускатная</label>
+			<input id="element_1_3" name="element_1" class="element radio" type="radio" value="3" />
+			<label class="choice" for="element_1_3">Шатровая</label>
+
+					</span> 
+					</li>		<li id="li_3" >
+					<label class="description" for="element_3">Материал кровли </label>
+					<div>
+					<select class="element select medium" id="element_3" name="element_3"> 
+						<option value="" selected="selected"></option>
+			<option value="1" >Асбестоцементные листы</option>
+			<option value="2" >Кровельная сталь</option>
+			<option value="3" >Глиняная черепица</option>
+			<option value="4" >Мягкая черепица</option>
+			<option value="5" >Металлочерепица</option>
+
+					</select>
+					</div> 
+					</li>
+					</li>		<li id="li_2" >
+					</li>			<li class="section_break">
+						
+						
+						
+					</li>
+			<label class="description" for="element_2">Конструктивные особенности крыши:</label>
+					<label class="description" for="element_2">Уклон крыши(в градусах): <span id="element_2"></span></label>
+					<div id="slider"></div>
+					</li>			<li class="section_break">
+						
+						
+						
+					</li>
+
+			<table border=0>		
+			<tr>		
+			<td width=350>
+			<h4>Вид и план дома</h4>  		   
+					<li id="li_5" >
+					<label class="description" for="element_5">План </label>
+					<div>
+					<select class="element select medium" id="element_5" name="element_5"> 
+						<option value="" selected="selected"></option>
+			<option value="1">План1</option>
+			<option value="2">План2</option>
+			<option value="3">План3</option>
+			<option value="4">Создать новый план</option>
+
+					</select>
+					</div> 
+					</li>
+			</td>
+			</tr>
+			</table>			
+								<li class="buttons">
+							<input type="hidden" name="form_id" value="410396" />
+
+				
+										<input id="saveForm" class="button_text" type="button" name="submit" value="Создать" onClick="drawImg();" />
+										<input class="button_text" type="button" name="hide" value="Отмена" onClick="hideAll();" />
+										<input class="button_text" type="button" name="back" value="Закрыть форму" onClick="document.location.href='../index.html';" />
+					</li>
+						</ul>
+					</form>	
+				</td>    
+                <td>
+                    <div id="img-container">
+                        <!-- Односкатная -->	
+						<figure id="ladderc_1_1_20" style="display:none;">
+                          <object data="Односкатная асбестоцементная20.svg" type="image/svg+xml" id="ladderc_1_1_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_1_30" style="display:none;">
+                          <object data="Односкатная асбестоцементная30.svg" type="image/svg+xml" id="ladderc_1_1_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_1_40" style="display:none;">
+                          <object data="Односкатная асбестоцементная40.svg" type="image/svg+xml" id="ladderc_1_1_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_1_50" style="display:none;">
+                          <object data="Односкатная асбестоцементная50.svg" type="image/svg+xml" id="ladderc_1_1_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_1_2_20" style="display:none;">
+                          <object data="Односкатная кровельная сталь20.svg" type="image/svg+xml" id="ladderc_1_2_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_2_30" style="display:none;">
+                          <object data="Односкатная кровельная сталь30.svg" type="image/svg+xml" id="ladderc_1_2_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_2_40" style="display:none;">
+                          <object data="Односкатная кровельная сталь40.svg" type="image/svg+xml" id="ladderc_1_2_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_2_50" style="display:none;">
+                          <object data="Односкатная кровельная сталь50.svg" type="image/svg+xml" id="ladderc_1_2_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_1_3_20" style="display:none;">
+                          <object data="Односкатная глиняная черепица20.svg" type="image/svg+xml" id="ladderc_1_3_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_3_30" style="display:none;">
+                          <object data="Односкатная глиняная черепица30.svg" type="image/svg+xml" id="ladderc_1_3_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_3_40" style="display:none;">
+                          <object data="Односкатная глиняная черепица40.svg" type="image/svg+xml" id="ladderc_1_3_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_3_50" style="display:none;">
+                          <object data="Односкатная глиняная черепица50.svg" type="image/svg+xml" id="ladderc_1_3_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_1_4_20" style="display:none;">
+                          <object data="Односкатная мягкая черепица20.svg" type="image/svg+xml" id="ladderc_1_4_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_4_30" style="display:none;">
+                          <object data="Односкатная мягкая черепица30.svg" type="image/svg+xml" id="ladderc_1_4_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_4_40" style="display:none;">
+                          <object data="Односкатная мягкая черепица40.svg" type="image/svg+xml" id="ladderc_1_4_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_4_50" style="display:none;">
+                          <object data="Односкатная мягкая черепица50.svg" type="image/svg+xml" id="ladderc_1_4_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_1_5_20" style="display:none;">
+                          <object data="Односкатная металлочерепица20.svg" type="image/svg+xml" id="ladderc_1_4_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_5_30" style="display:none;">
+                          <object data="Односкатная металлочерепица30.svg" type="image/svg+xml" id="ladderc_1_4_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_5_40" style="display:none;">
+                          <object data="Односкатная металлочерепица40.svg" type="image/svg+xml" id="ladderc_1_4_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_5_50" style="display:none;">
+                          <object data="Односкатная металлочерепица50.svg" type="image/svg+xml" id="ladderc_1_4_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+					<!-- Односкатная -->	
+					
+					<!-- Двускатная -->	
+						<figure id="ladderc_2_1_20" style="display:none;">
+                          <object data="Двускатная асбестоцементная20.svg" type="image/svg+xml" id="ladderc_2_1_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_1_30" style="display:none;">
+                          <object data="Двускатная асбестоцементная30.svg" type="image/svg+xml" id="ladderc_2_1_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_1_40" style="display:none;">
+                          <object data="Двускатная асбестоцементная40.svg" type="image/svg+xml" id="ladderc_2_1_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_1_50" style="display:none;">
+                          <object data="Двускатная асбестоцементная50.svg" type="image/svg+xml" id="ladderc_2_1_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_2_2_20" style="display:none;">
+                          <object data="Двускатная кровельная сталь20.svg" type="image/svg+xml" id="ladderc_2_2_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_2_30" style="display:none;">
+                          <object data="Двускатная кровельная сталь30.svg" type="image/svg+xml" id="ladderc_2_2_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_2_40" style="display:none;">
+                          <object data="Двускатная кровельная сталь40.svg" type="image/svg+xml" id="ladderc_2_2_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_2_50" style="display:none;">
+                          <object data="Двускатная кровельная сталь50.svg" type="image/svg+xml" id="ladderc_2_2_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_2_3_20" style="display:none;">
+                          <object data="Двускатная глиняная черепица20.svg" type="image/svg+xml" id="ladderc_2_3_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_3_30" style="display:none;">
+                          <object data="Двускатная глиняная черепица30.svg" type="image/svg+xml" id="ladderc_2_3_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_3_40" style="display:none;">
+                          <object data="Двускатная глиняная черепица40.svg" type="image/svg+xml" id="ladderc_2_3_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_3_50" style="display:none;">
+                          <object data="Двускатная глиняная черепица50.svg" type="image/svg+xml" id="ladderc_2_3_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_2_4_20" style="display:none;">
+                          <object data="Двускатная мягкая черепица20.svg" type="image/svg+xml" id="ladderc_2_4_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_4_30" style="display:none;">
+                          <object data="Двускатная мягкая черепица30.svg" type="image/svg+xml" id="ladderc_2_4_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_4_40" style="display:none;">
+                          <object data="Двускатная мягкая черепица40.svg" type="image/svg+xml" id="ladderc_2_4_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_4_50" style="display:none;">
+                          <object data="Двускатная мягкая черепица50.svg" type="image/svg+xml" id="ladderc_2_4_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_2_5_20" style="display:none;">
+                          <object data="Двускатная металлочерепица20.svg" type="image/svg+xml" id="ladderc_2_4_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_5_30" style="display:none;">
+                          <object data="Двускатная металлочерепица30.svg" type="image/svg+xml" id="ladderc_2_4_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_5_40" style="display:none;">
+                          <object data="Двускатная металлочерепица40.svg" type="image/svg+xml" id="ladderc_2_4_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_5_50" style="display:none;">
+                          <object data="Двускатная металлочерепица50.svg" type="image/svg+xml" id="ladderc_2_4_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+					<!-- Двускатная -->
+					
+					<!-- Шатровая -->	
+						<figure id="ladderc_3_1_20" style="display:none;">
+                          <object data="Шатровая асбестоцементная20.svg" type="image/svg+xml" id="ladderc_3_1_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_1_30" style="display:none;">
+                          <object data="Шатровая асбестоцементная30.svg" type="image/svg+xml" id="ladderc_3_1_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_1_40" style="display:none;">
+                          <object data="Шатровая асбестоцементная40.svg" type="image/svg+xml" id="ladderc_3_1_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_1_50" style="display:none;">
+                          <object data="Шатровая асбестоцементная50.svg" type="image/svg+xml" id="ladderc_3_1_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_3_2_20" style="display:none;">
+                          <object data="Шатровая кровельная сталь20.svg" type="image/svg+xml" id="ladderc_3_2_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_2_30" style="display:none;">
+                          <object data="Шатровая кровельная сталь30.svg" type="image/svg+xml" id="ladderc_3_2_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_2_40" style="display:none;">
+                          <object data="Шатровая кровельная сталь40.svg" type="image/svg+xml" id="ladderc_3_2_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_2_50" style="display:none;">
+                          <object data="Шатровая кровельная сталь50.svg" type="image/svg+xml" id="ladderc_3_2_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_3_3_20" style="display:none;">
+                          <object data="Шатровая глиняная черепица20.svg" type="image/svg+xml" id="ladderc_3_3_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_3_30" style="display:none;">
+                          <object data="Шатровая глиняная черепица30.svg" type="image/svg+xml" id="ladderc_3_3_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_3_40" style="display:none;">
+                          <object data="Шатровая глиняная черепица40.svg" type="image/svg+xml" id="ladderc_3_3_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_3_50" style="display:none;">
+                          <object data="Шатровая глиняная черепица50.svg" type="image/svg+xml" id="ladderc_3_3_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_3_4_20" style="display:none;">
+                          <object data="Шатровая мягкая черепица20.svg" type="image/svg+xml" id="ladderc_3_4_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_4_30" style="display:none;">
+                          <object data="Шатровая мягкая черепица30.svg" type="image/svg+xml" id="ladderc_3_4_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_4_40" style="display:none;">
+                          <object data="Шатровая мягкая черепица40.svg" type="image/svg+xml" id="ladderc_3_4_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_4_50" style="display:none;">
+                          <object data="Шатровая мягкая черепица50.svg" type="image/svg+xml" id="ladderc_3_4_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_3_5_20" style="display:none;">
+                          <object data="Шатровая металлочерепица20.svg" type="image/svg+xml" id="ladderc_3_4_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_5_30" style="display:none;">
+                          <object data="Шатровая металлочерепица30.svg" type="image/svg+xml" id="ladderc_3_4_30" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_5_40" style="display:none;">
+                          <object data="Шатровая металлочерепица40.svg" type="image/svg+xml" id="ladderc_3_4_40" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_5_50" style="display:none;">
+                          <object data="Шатровая металлочерепица50.svg" type="image/svg+xml" id="ladderc_3_4_50" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+					<!-- Шатровая -->
+						
+						
+					</div>
+                </td>    
+            </tr>    
+        </table>    
+		
+		<div id="footer">
+					</div>	
+		
+	</div>
+
+	</body>
+</html>

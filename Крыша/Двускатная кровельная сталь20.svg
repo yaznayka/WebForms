@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 210 297"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#2B2A29;stroke-width:0.5}
+    .str1 {stroke:#333333;stroke-width:0.5}
+    .fil1 {fill:none}
+    .fil0 {fill:#339966}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0 str0" points="4.327,53.011 42.696,25.911 46.5858,28.8309 12.1856,53.3498 "/>
+  <line class="fil1 str0" x1="17.0812" y1="49.8605" x2="16.3464" y2= "88.6145" />
+  <line class="fil1 str0" x1="93.0986" y1="55.7554" x2="93.5462" y2= "89.5391" />
+  <line class="fil1 str0" x1="188.775" y1="56.562" x2="188.774" y2= "89.8903" />
+  <line class="fil1 str0" x1="3.4024" y1="88.6145" x2="204.954" y2= "90.0014" />
+  <g id="_356418432">
+   <polygon id="_349006944" class="fil0 str1" points="42.6032,26.1677 158.669,26.6612 196.412,56.6264 81.8656,55.8999 "/>
+   <line id="_349004040" class="fil1 str1" x1="55.5313" y1="27.581" x2="93.0985" y2= "55.9712" />
+   <line id="_349004016" class="fil1 str1" x1="64.9407" y1="27.5836" x2="102.508" y2= "55.9738" />
+   <line id="_349001064" class="fil1 str1" x1="74.4822" y1="27.686" x2="112.049" y2= "56.0762" />
+   <line id="_349003848" class="fil1 str1" x1="83.9135" y1="27.7051" x2="121.481" y2= "56.0953" />
+   <line id="_349009272" class="fil1 str1" x1="93.4439" y1="27.799" x2="131.011" y2= "56.1892" />
+   <line id="_349002216" class="fil1 str1" x1="102.749" y1="27.8797" x2="140.317" y2= "56.2699" />
+   <line id="_348997896" class="fil1 str1" x1="112.267" y1="27.8074" x2="149.834" y2= "56.1977" />
+   <line id="_349000200" class="fil1 str1" x1="121.84" y1="27.9338" x2="159.408" y2= "56.324" />
+   <line id="_348999264" class="fil1 str1" x1="131.543" y1="28.0428" x2="169.11" y2= "56.433" />
+   <line id="_349002720" class="fil1 str1" x1="140.868" y1="27.9757" x2="178.435" y2= "56.3659" />
+   <line id="_348999912" class="fil1 str1" x1="150.164" y1="28.014" x2="187.732" y2= "56.4042" />
+   <polygon id="_349002240" class="fil0 str1" points="42.7075,26.1315 44.6409,27.5948 160.283,27.9433 158.669,26.6612 "/>
+  </g>
+ </g>
+</svg>

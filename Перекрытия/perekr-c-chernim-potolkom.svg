@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 210 297"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str2 {stroke:#825C1C;stroke-width:0.0762}
+    .str0 {stroke:#ECDB81;stroke-width:0.0762}
+    .str3 {stroke:#825C1C;stroke-width:0.13}
+    .str1 {stroke:#DA251D;stroke-width:0.5}
+    .fil1 {fill:none}
+    .fil2 {fill:#E0C172}
+    .fil0 {fill:#ECDB81}
+    .fil3 {fill:url(#id0)}
+    .fil5 {fill:url(#id1)}
+    .fil7 {fill:url(#id2)}
+    .fil6 {fill:url(#id3)}
+    .fil8 {fill:url(#id4)}
+    .fil4 {fill:url(#id5)}
+   ]]>
+  </style>
+  <radialGradient id="id0" gradientUnits="userSpaceOnUse" cx="20.0047" cy="82.5415" r="3.5422" fx="20.0047" fy="82.5415">
+   <stop offset="0" style="stop-color:#F0F0CE"/>
+   <stop offset="1" style="stop-color:#F0DE82"/>
+   <stop offset="1" style="stop-color:#F0DE82"/>
+  </radialGradient>
+  <radialGradient id="id1" gradientUnits="userSpaceOnUse" cx="20.0047" cy="91.2586" r="3.5422" fx="20.0047" fy="91.2586">
+   <stop offset="0" style="stop-color:#EEEECA"/>
+   <stop offset="1" style="stop-color:#EBD97F"/>
+   <stop offset="1" style="stop-color:#EBD97F"/>
+  </radialGradient>
+  <radialGradient id="id2" gradientUnits="userSpaceOnUse" cx="20.0047" cy="99.9383" r="3.5422" fx="20.0047" fy="99.9383">
+   <stop offset="0" style="stop-color:#EFEFCA"/>
+   <stop offset="1" style="stop-color:#ECDB81"/>
+   <stop offset="1" style="stop-color:#ECDB81"/>
+  </radialGradient>
+  <radialGradient id="id3" gradientUnits="userSpaceOnUse" cx="185.196" cy="91.2072" r="3.5422" fx="185.196" fy="91.2072">
+   <stop offset="0" style="stop-color:#F2F2D3"/>
+   <stop offset="1" style="stop-color:#EDDC85"/>
+   <stop offset="1" style="stop-color:#EDDC85"/>
+  </radialGradient>
+  <radialGradient id="id4" gradientUnits="userSpaceOnUse" cx="185.196" cy="99.8867" r="3.5422" fx="185.196" fy="99.8867">
+   <stop offset="0" style="stop-color:#F2F2C6"/>
+   <stop offset="1" style="stop-color:#EDDB82"/>
+   <stop offset="1" style="stop-color:#EDDB82"/>
+  </radialGradient>
+  <radialGradient id="id5" gradientUnits="userSpaceOnUse" cx="185.196" cy="81.0535" r="3.5422" fx="185.196" fy="81.0535">
+   <stop offset="0" style="stop-color:#EDEDC2"/>
+   <stop offset="1" style="stop-color:#EDDB82"/>
+   <stop offset="1" style="stop-color:#EDDB82"/>
+  </radialGradient>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_46167824">
+   <polygon id="_46352624" class="fil0 str0" points="13.8919,78.1909 13.8919,75.4211 104.853,25.4532 195.704,75.5319 196.036,78.3016 191.937,78.4124 106.626,30.6606 103.303,30.6606 18.2129,78.1909 "/>
+   <polygon id="_46352416" class="fil0 str0" points="103.303,30.6606 103.081,77.4154 106.847,77.4154 106.626,30.6606 "/>
+   <polygon id="_46356680" class="fil0 str0" points="101.128,79.8193 101.228,88.6809 110.727,88.6809 110.779,79.1376 "/>
+   <polygon id="_46360216" class="fil0 str0" points="66.7562,51.075 142.975,51.0068 148.516,54.1079 60.7575,54.4257 "/>
+   <polygon id="_46365640" class="fil0 str0" points="72.2992,47.9786 101.916,78.0672 102.836,78.0649 108.344,78.051 137.624,48.0114 134.769,46.4136 106.832,73.9813 103.097,73.9637 75.8406,46.0004 "/>
+   <path id="_46368784" class="fil1 str1" d="M19.6398 79.779l-17.7374 0 102.655 -56.9813 103.15 56.8186 -18.0595 0.2215m-170.007 -0.0588z"/>
+   <polygon id="_46369328" class="fil2 str2" points="22.4179,78.225 185.186,77.8115 181.099,81.4126 26.281,81.7878 "/>
+   <ellipse id="_46333840" class="fil3 str0" cx="21.3388" cy="82.7211" rx="5.13118" ry="4.48975"/>
+   <ellipse id="_46387400" class="fil4 str0" cx="185.914" cy="82.3106" rx="5.13118" ry="4.48975"/>
+   <ellipse id="_46397240" class="fil5 str0" cx="21.3388" cy="91.7075" rx="5.13118" ry="4.48975"/>
+   <ellipse id="_46407112" class="fil6 str0" cx="185.914" cy="91.297" rx="5.13118" ry="4.48975"/>
+   <ellipse id="_46416984" class="fil7 str0" cx="21.3388" cy="100.657" rx="5.13118" ry="4.48975"/>
+   <ellipse id="_46427144" class="fil8 str0" cx="185.914" cy="100.246" rx="5.13118" ry="4.48975"/>
+   <g id="_127783488">
+    <line id="_127242872" class="fil1 str3" x1="36.4393" y1="78.134" x2="36.448" y2= "81.8185" />
+    <line id="_127241528" class="fil1 str3" x1="52.8573" y1="78.0916" x2="52.866" y2= "81.7756" />
+    <line id="_141270200" class="fil1 str3" x1="69.0427" y1="78.0506" x2="69.0513" y2= "81.739" />
+    <line id="_125462760" class="fil1 str3" x1="84.5611" y1="78.0847" x2="84.5698" y2= "81.6586" />
+    <line id="_135388864" class="fil1 str3" x1="101.921" y1="77.9676" x2="101.93" y2= "81.6709" />
+    <line id="_135538528" class="fil1 str3" x1="115.162" y1="77.9408" x2="115.171" y2= "81.6229" />
+    <line id="_127159840" class="fil1 str3" x1="132.438" y1="77.8928" x2="132.447" y2= "81.5857" />
+    <line id="_43893528" class="fil1 str3" x1="147.75" y1="77.8518" x2="147.758" y2= "81.5489" />
+    <line id="_193326320" class="fil1 str3" x1="167.708" y1="77.8008" x2="167.717" y2= "81.4989" />
+   </g>
+  </g>
+ </g>
+</svg>

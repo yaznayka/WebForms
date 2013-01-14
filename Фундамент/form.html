@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Фундамент</title>
+<link rel="stylesheet" type="text/css" href="../view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript">
+	function hideAll() 
+	{
+		$('#img-container figure').hide();
+	}
+	
+	function drawImg()
+	{
+        var svgE1 = $("#li_4 input:checked");
+		var svgE2 = $("#li_5 input:checked");
+		var svgE3 = $("#li_6 input:checked");
+		var svgdom;
+		
+		hideAll();
+		
+		if (svgE3[0].value == 1)
+		{
+			if (svgE2[0].value == 1)
+			{
+				if (svgE1[0].value == 1)
+				{
+					$("#ladderc_01").show();
+				}
+				else if (svgE1[0].value == 2)
+				{
+					$("#ladderc_02").show();
+				}
+				else if (svgE1[0].value == 3)
+				{
+					$("#ladderc_03").show();
+				}
+				else if (svgE1[0].value == 4)
+				{
+					$("#ladderc_04").show();
+				}
+			}
+			else if (svgE2[0].value == 2)
+			{
+				if (svgE1[0].value == 1)
+				{
+					$("#ladderc_05").show();
+				}
+				else if (svgE1[0].value == 2)
+				{
+					$("#ladderc_06").show();
+				}
+				else if (svgE1[0].value == 3)
+				{
+					$("#ladderc_07").show();
+				}
+				else if (svgE1[0].value == 4)
+				{
+					$("#ladderc_08").show();
+				}
+			}
+			else if (svgE2[0].value == 3)
+			{
+				if (svgE1[0].value == 1)
+				{
+					$("#ladderc_09").show();
+				}
+				else if (svgE1[0].value == 2)
+				{
+					$("#ladderc_10").show();
+				}
+				else if (svgE1[0].value == 3)
+				{
+					$("#ladderc_11").show();
+				}
+				else if (svgE1[0].value == 4)
+				{
+					$("#ladderc_12").show();
+				}
+			}
+		}
+		else if (svgE3[0].value == 2)
+		{
+			if (svgE2[0].value == 1)
+			{
+				if (svgE1[0].value == 1)
+				{
+					$("#ladderc_13").show();
+				}
+				else if (svgE1[0].value == 2)
+				{
+					$("#ladderc_14").show();
+				}
+				else if (svgE1[0].value == 3)
+				{
+					$("#ladderc_15").show();
+				}
+				else if (svgE1[0].value == 4)
+				{
+					$("#ladderc_16").show();
+				}
+			}
+			else if (svgE2[0].value == 2)
+			{
+				if (svgE1[0].value == 1)
+				{
+					$("#ladderc_17").show();
+				}
+				else if (svgE1[0].value == 2)
+				{
+					$("#ladderc_18").show();
+				}
+				else if (svgE1[0].value == 3)
+				{
+					$("#ladderc_19").show();
+				}
+				else if (svgE1[0].value == 4)
+				{
+					$("#ladderc_20").show();
+				}
+			}
+			else if (svgE2[0].value == 3)
+			{
+				if (svgE1[0].value == 1)
+				{
+					$("#ladderc_21").show();
+				}
+				else if (svgE1[0].value == 2)
+				{
+					$("#ladderc_22").show();
+				}
+				else if (svgE1[0].value == 3)
+				{
+					$("#ladderc_23").show();
+				}
+				else if (svgE1[0].value == 4)
+				{
+					$("#ladderc_24").show();
+				}
+			}
+		}
+		
+	}
+</script>
+
+
+</head>
+<body id="main_body" >
+	
+	<div id="form_container">
+	
+		<h1><a>Фундамент</a></h1>
+		
+		<table id="main-table">
+            <tr>
+                <td>
+					<form id="form_415374" class="appnitro"  method="post" action="">
+								<div class="form_description">
+						<h2>Фундамент</h2>
+						<p>
+			</p>
+					</div>						
+						<ul >
+						
+								
+						<h3>Свойства и особенности грунта</h3>
+						<p></p>
+							<li id="li_4" >
+					<label class="description" for="element_4">Вид грунта</label>
+					<span>
+			<input id="element_4_1" name="element_4" class="element radio" type="radio" value="1" />
+			<label class="choice" for="element_4_1">Глинистые</label>
+			<input id="element_4_2" name="element_4" class="element radio" type="radio" value="2" />
+			<label class="choice" for="element_4_2">Скалистые</label>
+			<input id="element_4_3" name="element_4" class="element radio" type="radio" value="3" />
+			<label class="choice" for="element_4_3">Суглинистые</label>
+			<input id="element_4_4" name="element_4" class="element radio" type="radio" value="4" />
+			<label class="choice" for="element_4_4">Хрящеватые</label>
+
+					</span> 
+					</li>	
+					
+					<li id="li_5" >
+					<label class="description" for="element_5">Материал</label>
+					<span>
+			<input id="element_5_1" name="element_5" class="element radio" type="radio" value="1" />
+			<label class="choice" for="element_5_1">Бутовый</label>
+			<input id="element_5_2" name="element_5" class="element radio" type="radio" value="2" />
+			<label class="choice" for="element_5_2">Железобетонный</label>
+			<input id="element_5_3" name="element_5" class="element radio" type="radio" value="3" />
+			<label class="choice" for="element_5_3">Кирпичный</label>
+					</span> 
+					</li>
+					
+					<li id="li_6" >
+					<label class="description" for="element_6">Тип конструкции</label>
+					<span>
+			<input id="element_6_1" name="element_6" class="element radio" type="radio" value="1" />
+			<label class="choice" for="element_6_1">Ленточный</label>
+			<input id="element_6_2" name="element_6" class="element radio" type="radio" value="2" />
+			<label class="choice" for="element_6_2">Столбчатый</label>
+					</span> 
+					</li>
+
+					<li class="section_break"></li>
+						<table border=0>		
+			<tr>		
+			<td width=350>
+			<h4>Вид и план дома</h4>  		   
+					<li id="li_7" >
+					<label class="description" for="element_7">План </label>
+					<div>
+					<select class="element select medium" id="element_7" name="element_7"> 
+						<option value="" selected="selected"></option>
+			<option value="1">План1</option>
+			<option value="2">План2</option>
+			<option value="3">План3</option>
+			<option value="4">Создать новый план</option>
+
+					</select>
+					</div> 
+					</li>
+			</td>
+			</tr>
+			</table>	
+						
+								<li class="buttons">
+							<input type="hidden" name="form_id" value="415374" />
+							
+							<input id="saveForm" class="button_text" type="button" name="submit" value="Создать" onClick="drawImg();" />
+                            <input class="button_text" type="button" name="hide" value="Отмена" onClick="hideAll();" />
+                            <input class="button_text" type="button" name="back" value="Закрыть форму" onClick="document.location.href='../index.html';" />
+					</li>
+						</ul>
+					</form>	
+				</td>    
+                <td>	
+					<div id="img-container">
+                        <figure id="ladderc_01" style="display:none;">
+                          <object data="Ленейчатый Бутовый Глинистый.svg" type="image/svg+xml" id="ladder_01" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Ленейчатый Бутовый Глинистый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_02" style="display:none;">
+                          <object data="Ленейчатый Бутовый Скалистый.svg" type="image/svg+xml" id="ladder_02" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Ленейчатый Бутовый Скалистый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_03" style="display:none;">
+                          <object data="Ленейчатый Бутовый Суглинистый.svg" type="image/svg+xml" id="ladder_03" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Ленейчатый Бутовый Суглинистый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_04" style="display:none;">
+                          <object data="Ленейчатый Бутовый Хрящеватый.svg" type="image/svg+xml" id="ladder_04" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Ленейчатый Бутовый Хрящеватый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_05" style="display:none;">
+                          <object data="Ленейчатый Железобетонный Глинистый.svg" type="image/svg+xml" id="ladder_05" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Ленейчатый Железобетонный Глинистый</figcaption>
+                        </figure>
+						
+						<figure id="ladderc_06" style="display:none;">
+                          <object data="Ленейчатый Железобетонный Скалистый.svg" type="image/svg+xml" id="ladder_06" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Ленейчатый Железобетонный Скалистый</figcaption>
+                        </figure>
+						
+						<figure id="ladderc_07" style="display:none;">
+                          <object data="Ленейчатый железобетонный Суглинистый.svg" type="image/svg+xml" id="ladder_07" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Ленейчатый железобетонный Суглинистый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_08" style="display:none;">
+                          <object data="Ленейчатый Железобетонный Хрящеватый.svg" type="image/svg+xml" id="ladder_08" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Ленейчатый Железобетонный Хрящеватый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_09" style="display:none;">
+                          <object data="Ленейчатый Кирпичный Глинистый.svg" type="image/svg+xml" id="ladder_09" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Ленейчатый Кирпичный Глинистый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_10" style="display:none;">
+                          <object data="Ленейчатый Кирпичный Скалистый.svg" type="image/svg+xml" id="ladder_10" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Ленейчатый Кирпичный Скалистый</figcaption>
+                        </figure>
+						
+						<figure id="ladderc_11" style="display:none;">
+                          <object data="Ленейчатый Кирпичный Суглинистый.svg" type="image/svg+xml" id="ladder_11" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Ленейчатый Кирпичный Суглинистый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_12" style="display:none;">
+                          <object data="Ленейчатый Кирпичный Хрящеватый.svg" type="image/svg+xml" id="ladder_12" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Ленейчатый Кирпичный Хрящеватый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_13" style="display:none;">
+                          <object data="Столбчатый Бутовый Глинистый.svg" type="image/svg+xml" id="ladder_13" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Столбчатый Бутовый Глинистый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_14" style="display:none;">
+                          <object data="Столбчатый Бутовый Скалистый.svg" type="image/svg+xml" id="ladder_14" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Столбчатый Бутовый Скалистый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_15" style="display:none;">
+                          <object data="Столбчатый Бутовый Суглинистый.svg" type="image/svg+xml" id="ladder_15" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Столбчатый Бутовый Суглинистый</figcaption>
+                        </figure>
+						
+						<figure id="ladderc_16" style="display:none;">
+                          <object data="Столбчатый Бутовый Хрящеватый.svg" type="image/svg+xml" id="ladder_16" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Столбчатый Бутовый Хрящеватый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_17" style="display:none;">
+                          <object data="Столбчатый Железобетонный Глинистый.svg" type="image/svg+xml" id="ladder_17" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Столбчатый Железобетонный Глинистый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_18" style="display:none;">
+                          <object data="Столбчатый Железобетонный Скалистый.svg" type="image/svg+xml" id="ladder_18" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Столбчатый Железобетонный Скалистый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_19" style="display:none;">
+                          <object data="Столбчатый Железобетонный Суглинистый.svg" type="image/svg+xml" id="ladder_19" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Столбчатый Железобетонный Суглинистый.svg</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_20" style="display:none;">
+                          <object data="Столбчатый Железобетонный Хрящеватый.svg" type="image/svg+xml" id="ladder_20" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Столбчатый Железобетонный Хрящеватый</figcaption>
+                        </figure>
+						
+						<figure id="ladderc_21" style="display:none;">
+                          <object data="Столбчатый Кирпичный Глинистый.svg" type="image/svg+xml" id="ladder_21" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Столбчатый Кирпичный Глинистый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_22" style="display:none;">
+                          <object data="Столбчатый Кирпичный Скалистый .svg" type="image/svg+xml" id="ladder_22" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Столбчатый Кирпичный Скалистый </figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_23" style="display:none;">
+                          <object data="Столбчатый Кирпичный Суглинистый.svg" type="image/svg+xml" id="ladder_23" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Столбчатый Кирпичный Суглинистый</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_24" style="display:none;">
+                          <object data="Столбчатый Кирпичный Хрящеватый.svg" type="image/svg+xml" id="ladder_24" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Столбчатый Кирпичный Хрящеватый</figcaption>
+                        </figure>
+                    </div>
+                </td>    
+            </tr>    
+        </table>  
+		
+		<div id="footer"></div>
+		
+	</div>
+	
+	</body>
+</html>

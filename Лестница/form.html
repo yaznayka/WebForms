@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Лестницы</title>
+<link rel="stylesheet" type="text/css" href="../view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript">
+	function hideAll() 
+	{
+		$('#img-container figure').hide();
+	}
+	
+	function drawImg()
+	{
+        var svgE1 = $("#li_4 input:checked");
+		var svgE2 = $("#element_1 option:selected");
+		var svgE3 = $("#element_2 option:selected");
+		
+		var selector1 = "#ladderc_"+svgE1.val()+"_"+svgE2.val()+"_"+svgE3.val();
+		var selector2 = "ladder_"+svgE1.val()+"_"+svgE2.val()+"_"+svgE3.val();
+		
+		hideAll();
+		$(selector1).show();
+		
+		var svgdom;
+		var svgobject = document.getElementById(selector2);
+			if ('contentDocument' in svgobject) {
+				svgdom = $(svgobject.contentDocument);
+			}	
+        
+		var choosedColor = $("#element_5 option:selected");
+        if (choosedColor[0].value == 1)
+		{
+			$("#layer_01", svgdom).attr("fill", "#C90");
+		}
+		else if (choosedColor[0].value == 2)
+		{
+			$("#layer_01", svgdom).attr("fill", "#C93");
+		}
+		else if (choosedColor[0].value == 3)
+		{
+			$("#layer_01", svgdom).attr("fill", "#FF9");
+		}
+		else if (choosedColor[0].value == 4)
+		{
+			$("#layer_01", svgdom).attr("fill", "#FC3");
+		}
+	}
+</script>
+
+
+</head>
+<body id="main_body" >
+	
+	<div id="form_container">
+	
+		<h1><a>Лестницы</a></h1>
+        
+        <table id="main-table">
+            <tr>
+                <td>
+                    <form id="main_form" class="appnitro"  method="post" action="">
+                                <div class="form_description">
+                        <h2>Лестницы</h2>
+                        <p></p>
+                    </div>						
+                        <ul >
+                        
+                                <li id="li_4" >
+                    <label class="description" for="element_4">Вид лестницы </label>
+                    <span>
+                        <input id="element_4_1" name="element_4" class="element radio" type="radio" value="1" />
+            <label class="choice" for="element_4_1">Прямая</label>
+			
+            <input id="element_4_2" name="element_4" class="element radio" type="radio" value="5" />
+            <label class="choice" for="element_4_2">Винтовая</label>
+			
+            <input id="element_4_3" name="element_4" class="element radio" type="radio" value="3" />
+            <label class="choice" for="element_4_3">Г-образная</label>
+			
+            <input id="element_4_4" name="element_4" class="element radio" type="radio" value="4" />
+            <label class="choice" for="element_4_4">П-образная</label>
+			
+            <input id="element_4_5" name="element_4" class="element radio" type="radio" value="2" />
+            <label class="choice" for="element_4_5">Изогнутая монолитная</label>
+
+                    </span> 
+                    </li>		<li id="li_3" >
+                    <label class="description" for="element_3">Этажность </label>
+                    <div>
+                    <select class="element select medium" id="element_3" name="element_3"> 
+                        <option value="" selected="selected"></option>
+            <option value="1" >1</option>
+            <option value="2" >2</option>
+            <option value="3" >3</option>
+
+                    </select>
+                    </div> 
+                    </li>		<li id="li_5" >
+                    <label class="description" for="element_5">Материал </label>
+                    <div>
+                    <select class="element select medium" id="element_5" name="element_5"> 
+                        <option value="" selected="selected"></option>
+            <option value="1" >Дуб</option>
+            <option value="2" >Бук</option>
+            <option value="3" >Сосна</option>
+            <option value="4" >Лиственница</option>
+
+                    </select>
+                    </div> 
+                    
+                    </li>
+                    <li class="section_break">
+                        
+                        
+                        
+                    </li>
+            <h3>Конструктивные особенности лестниц</h3>		
+                    <li id="li_1" >
+                    
+                    <label class="description" for="element_1">Ширина проступи </label>
+                    <div>
+						<select class="element select medium" id="element_1" name="element_1"> 
+							<option value="" selected="selected"></option>
+							<option value="1">340</option>
+							<option value="2">350</option>
+							<option value="3">360</option>
+						</select>
+                    </div> 
+                    </li>		<li id="li_2" >
+                    <label class="description" for="element_2">Высота подступенка </label>
+                    <div>
+                        <select class="element select medium" id="element_2" name="element_2"> 
+							<option value="" selected="selected"></option>
+							<option value="1">150</option>
+							<option value="2">160</option>
+						</select>
+                    </div> 
+                    
+                    </li>
+                        </li>	
+                <li id="li_3" >
+                    <label class="description" for="element_3">Количество маршей </label>
+                    <div>
+                    <select class="element select small" id="element_3" name="element_3"> 
+                        <option value="" selected="selected"></option>
+            <option value="1" >1</option>
+            <option value="2" >2</option>
+            <option value="3" >3</option>
+
+                    </select>
+                    </div> 
+                    </li>			<li class="section_break">
+                        
+                        
+                        
+                    </li>	
+                    <table border=0>		
+            <tr>		
+            <td width=350>
+            <h4>Вид и план дома</h4>  		   
+                    <li id="li_5" >
+                    <label class="description" for="element_5">План </label>
+                    <div>
+                    <select class="element select medium" id="element_5" name="element_5"> 
+                        <option value="" selected="selected"></option>
+            <option value="1">План1</option>
+            <option value="2">План2</option>
+            <option value="3">План3</option>
+            <option value="4">Создать новый план</option>
+
+                    </select>
+                    </div> 
+                    </li>
+            </td>
+            </tr>
+            </table>	
+                                <li class="buttons">
+                            <input type="hidden" name="form_id" value="410396" />
+                            
+                            <input id="saveForm" class="button_text" type="button" name="submit" value="Создать" onClick="drawImg();" />
+                            <input class="button_text" type="button" name="hide" value="Отмена" onClick="hideAll();" />
+                            <input class="button_text" type="button" name="back" value="Закрыть форму" onClick="document.location.href='../index.html';" />
+                    </li>
+                        </ul>
+                    </form>	
+                </td>    
+                <td>
+                    <div id="img-container">
+                        <figure id="ladderc_1_1_1" style="display:none;">
+                          <object data="Lestnitsa-340-150.svg" type="image/svg+xml" id="ladder_1_1_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_1_2" style="display:none;">
+                          <object data="Lestnitsa-340-160.svg" type="image/svg+xml" id="ladder_1_1_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_2_1" style="display:none;">
+                          <object data="Lestnitsa-350-150.svg" type="image/svg+xml" id="ladder_1_2_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_2_2" style="display:none;">
+                          <object data="Lestnitsa-350-160.svg" type="image/svg+xml" id="ladder_1_2_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_3_1" style="display:none;">
+                          <object data="Lestnitsa-360-150.svg" type="image/svg+xml" id="ladder_1_3_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_1_3_2" style="display:none;">
+                          <object data="Lestnitsa-360-160.svg" type="image/svg+xml" id="ladder_1_3_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_2_1_1" style="display:none;">
+                          <object data="lestnitsa_izognutaya-340-150.svg" type="image/svg+xml" id="ladder_2_1_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_1_2" style="display:none;">
+                          <object data="lestnitsa_izognutaya-340-160.svg" type="image/svg+xml" id="ladder_2_1_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_2_1" style="display:none;">
+                          <object data="lestnitsa_izognutaya-350-150.svg" type="image/svg+xml" id="ladder_2_2_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_2_2" style="display:none;">
+                          <object data="lestnitsa_izognutaya-350-160.svg" type="image/svg+xml" id="ladder_2_2_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_3_1" style="display:none;">
+                          <object data="lestnitsa_izognutaya-360-150.svg" type="image/svg+xml" id="ladder_2_3_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_2_3_2" style="display:none;">
+                          <object data="lestnitsa_izognutaya-360-160.svg" type="image/svg+xml" id="ladder_2_3_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_3_1_1" style="display:none;">
+                          <object data="G-obraznaya_lestnitsa340-150.svg" type="image/svg+xml" id="ladder_3_1_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_1_2" style="display:none;">
+                          <object data="G-obraznaya_lestnitsa-340-160.svg" type="image/svg+xml" id="ladder_3_1_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_2_1" style="display:none;">
+                          <object data="G-obraznaya_lestnitsa-350-150.svg" type="image/svg+xml" id="ladder_3_2_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_2_2" style="display:none;">
+                          <object data="G-obraznaya_lestnitsa350-160.svg" type="image/svg+xml" id="ladder_3_2_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_3_1" style="display:none;">
+                          <object data="G-obraznaya_lestnitsa360-150.svg" type="image/svg+xml" id="ladder_3_3_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_3_3_2" style="display:none;">
+                          <object data="G-obraznaya_lestnitsa360-160.svg" type="image/svg+xml" id="ladder_3_3_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_4_1_1" style="display:none;">
+                          <object data="P-obraznaya_lestnitsa-340-150.svg" type="image/svg+xml" id="ladder_4_1_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_4_1_2" style="display:none;">
+                          <object data="P-obraznaya_lestnitsa-340-160.svg" type="image/svg+xml" id="ladder_4_1_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_4_2_1" style="display:none;">
+                          <object data="P-obraznaya_lestnitsa-350-150.svg" type="image/svg+xml" id="ladder_4_2_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_4_2_2" style="display:none;">
+                          <object data="P-obraznaya_lestnitsa-350-160.svg" type="image/svg+xml" id="ladder_4_2_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_4_3_1" style="display:none;">
+                          <object data="P-obraznaya_lestnitsa-360-150.svg" type="image/svg+xml" id="ladder_4_3_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_4_3_2" style="display:none;">
+                          <object data="P-obraznaya_lestnitsa-360-160.svg" type="image/svg+xml" id="ladder_4_3_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						
+						<figure id="ladderc_5_1_1" style="display:none;">
+                          <object data="Vintovaya_lestnitsa-340-150.svg" type="image/svg+xml" id="ladder_5_1_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_5_1_2" style="display:none;">
+                          <object data="Vintovaya_lestnitsa-340-160.svg" type="image/svg+xml" id="ladder_5_1_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_5_2_1" style="display:none;">
+                          <object data="Vintovaya_lestnitsa-350-150.svg" type="image/svg+xml" id="ladder_5_2_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_5_2_2" style="display:none;">
+                          <object data="Vintovaya_lestnitsa-350-160.svg" type="image/svg+xml" id="ladder_5_2_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_5_3_1" style="display:none;">
+                          <object data="Vintovaya_lestnitsa-360-150.svg" type="image/svg+xml" id="ladder_5_3_1" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+						<figure id="ladderc_5_3_2" style="display:none;">
+                          <object data="Vintovaya_lestnitsa-360-160.svg" type="image/svg+xml" id="ladder_5_3_2" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption></figcaption>
+                        </figure>
+                    </div>
+                </td>    
+            </tr>    
+        </table>    
+		
+		<div id="footer">
+					</div>
+	</div>
+	</body>
+</html>

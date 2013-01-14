@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 210 297"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#333333;stroke-width:0.5}
+    .fil0 {fill:none}
+    .fil1 {fill:#339966}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <line class="fil0 str0" x1="23.3073" y1="68.8807" x2="23.3079" y2= "104.999" />
+  <line class="fil0 str0" x1="114.636" y1="82.2119" x2="115.674" y2= "124.027" />
+  <line class="fil0 str0" x1="188.883" y1="68.0546" x2="188.679" y2= "107.22" />
+  <polyline class="fil0 str0" points="23.3079,104.998 115.92,124.077 188.679,107.22 "/>
+  <g id="_434568368">
+   <polygon id="_433897568" class="fil1 str0" points="9.7057,70.7244 106.232,31.4195 198.311,70.5327 116.628,82.5115 "/>
+   <line id="_433904504" class="fil0 str0" x1="106.149" y1="31.5104" x2="116.628" y2= "82.5115" />
+   <line id="_433926248" class="fil0 str0" x1="194.135" y1="71.145" x2="106.5" y2= "34.0825" />
+   <line id="_433925912" class="fil0 str0" x1="17.5975" y1="71.3912" x2="106.696" y2= "34.1705" />
+   <polygon id="_433925768" class="fil1 str0" points="103.259,32.6301 112.496,82.0561 116.628,82.5115 120.225,81.9841 109.899,32.9773 106.232,31.4195 "/>
+   <line id="_433925384" class="fil0 str0" x1="106.149" y1="31.5104" x2="116.628" y2= "82.5115" />
+   <line id="_433925048" class="fil0 str0" x1="36.4352" y1="73.6711" x2="51.3669" y2= "57.2842" />
+   <line id="_433924712" class="fil0 str0" x1="48.4052" y1="75.1337" x2="73.0313" y2= "48.2339" />
+   <line id="_433924376" class="fil0 str0" x1="60.6333" y1="76.313" x2="94.0316" y2= "39.461" />
+   <line id="_433924040" class="fil0 str0" x1="72.746" y1="77.6191" x2="104.993" y2= "41.9075" />
+   <line id="_433923704" class="fil0 str0" x1="84.716" y1="79.0816" x2="107.309" y2= "54.3012" />
+   <line id="_433923368" class="fil0 str0" x1="96.7607" y1="80.4622" x2="109.571" y2= "66.4037" />
+   <line id="_433923032" class="fil0 str0" x1="130.111" y1="80.2951" x2="116.904" y2= "65.8811" />
+   <line id="_433922696" class="fil0 str0" x1="139.079" y1="79.2191" x2="113.708" y2= "51.0563" />
+   <line id="_433922360" class="fil0 str0" x1="148.527" y1="77.7514" x2="110.704" y2= "36.7958" />
+   <line id="_433922024" class="fil0 str0" x1="158.476" y1="76.2808" x2="129.395" y2= "43.7653" />
+   <line id="_433921688" class="fil0 str0" x1="167.452" y1="74.9554" x2="144.44" y2= "50.1281" />
+   <line id="_433921352" class="fil0 str0" x1="175.651" y1="73.8441" x2="160.658" y2= "56.9868" />
+   <line id="_433921016" class="fil0 str0" x1="184.517" y1="72.3459" x2="176.635" y2= "63.7436" />
+  </g>
+ </g>
+</svg>

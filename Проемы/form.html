@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Проемы</title>
+<link rel="stylesheet" type="text/css" href="../view.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript">
+	var svgdom1,svgdom2,svgdom3,svgdom4,svgdom5;
+	$(window).load(function () {
+			
+			var svgobject = document.getElementById('ladder_01');
+			if ('contentDocument' in svgobject) {
+				svgdom1 = $(svgobject.contentDocument);
+			}	
+			svgobject = document.getElementById('ladder_02');
+			if ('contentDocument' in svgobject) {
+				svgdom2 = $(svgobject.contentDocument);
+			}
+			svgobject = document.getElementById('ladder_03');
+			if ('contentDocument' in svgobject) {
+				svgdom3 = $(svgobject.contentDocument);
+			}
+			svgobject = document.getElementById('ladder_04');
+			if ('contentDocument' in svgobject) {
+				svgdom4 = $(svgobject.contentDocument);
+			}
+		});
+	
+	function hideAll() 
+	{
+		$('#img-container figure').hide();
+	}
+	
+	function drawImg()
+	{
+        var svgEl = $("#li_1 input:checked");
+		var svgdom;
+		
+		hideAll();
+        
+		if (svgEl[0].value == 1)
+		{
+			$("#ladderc_01").show();
+			svgdom = svgdom1;
+		}
+		else if (svgEl[0].value == 2)
+		{
+			$("#ladderc_02").show();
+			svgdom = svgdom2;
+		}
+		else if (svgEl[0].value == 3)
+		{
+			$("#ladderc_03").show();
+			svgdom = svgdom3;
+		}
+		else if (svgEl[0].value == 4)
+		{
+			$("#ladderc_04").show();
+			svgdom = svgdom4;
+		}
+		
+        if ($('#element_4_1').attr('checked') == 'checked')
+        {
+            $("g[spec_attr='dver']", svgdom).attr('class','');
+        }
+        else
+        {
+            $("g[spec_attr='dver']", svgdom).attr('class','hidden');
+        }
+        
+        if ($('#element_4_2').attr('checked') == 'checked')
+        {
+			$("g[spec_attr='okno']", svgdom).attr('class','');
+        }
+        else
+        {
+			$("g[spec_attr='okno']", svgdom).attr('class','hidden');
+        }
+        
+        if ($('#element_4_3').attr('checked') == 'checked')
+        {
+			$("g[spec_attr='ramka']", svgdom).attr('class','');
+        }
+        else
+        {
+			$("g[spec_attr='ramka']", svgdom).attr('class','hidden');
+        }
+        
+        /*if () {
+        
+        }*/
+	}
+</script>
+
+
+</head>
+<body id="main_body" >
+	
+	<div id="form_container">
+	
+		<h1><a>Проемы</a></h1>
+        
+        <table id="main-table">
+            <tr>
+                <td>
+                    <form id="form_410354" class="appnitro"  method="post" action="">
+                                <div class="form_description">
+                        <h2>Проемы</h2>
+                        <p></p>
+                    </div>						
+                        <ul >
+                        
+                                <li id="li_1" >
+                    <label class="description" for="element_1">Материал стен </label>
+                    <span>
+                        <input id="element_1_1" name="element_1" class="element radio" type="radio" value="1" />
+            <label class="choice" for="element_1_1">Клееный брус</label>
+            <input id="element_1_2" name="element_1" class="element radio" type="radio" value="2" />
+            <label class="choice" for="element_1_2">Оцилиндрованный брус</label>
+            <input id="element_1_3" name="element_1" class="element radio" type="radio" value="3" />
+            <label class="choice" for="element_1_3">Непрофилированный брус</label>
+            <input id="element_1_4" name="element_1" class="element radio" type="radio" value="4" />
+            <label class="choice" for="element_1_4">Профилированный брус</label>
+
+                    </span> 
+                    </li>
+                    <li class="section_break">
+                        
+                        
+                        
+                    </li>
+                        <li id="li_4" >
+                    <label class="description" for="element_4">Перечень доступных элементов</label>
+                    <span>
+                        <input id="element_4_1" name="element_4_1" class="element checkbox" type="checkbox" value="1" />
+            <label class="choice" for="element_4_1">Дверь</label>
+            <input id="element_4_2" name="element_4_2" class="element checkbox" type="checkbox" value="1" />
+            <label class="choice" for="element_4_2">Окно</label>
+            <input id="element_4_3" name="element_4_3" class="element checkbox" type="checkbox" value="1" />
+            <label class="choice" for="element_4_3">Проем</label>
+
+
+                    </span> 
+                    </li>
+                    
+                    <li class="section_break">
+                        
+                    <li id="li_3" >
+                    <label class="description" for="element_3">Этажность </label>
+                    <div>
+                    <select class="element select medium" id="element_3" name="element_3"> 
+                        <option value="" selected="selected"></option>
+            <option value="1" >1</option>
+            <option value="2" >2</option>
+            <option value="3" >3</option>
+
+                    </select>
+                    </div> 
+                    </li>	
+                        
+                    </li>
+                    <table border=0>		
+            <tr>		
+            <td width=350>
+            <h4>Вид и план дома</h4>  		   
+                    <li id="li_5" >
+                    <label class="description" for="element_5">План </label>
+                    <div>
+                    <select class="element select medium" id="element_5" name="element_5"> 
+                        <option value="" selected="selected"></option>
+            <option value="1">План1</option>
+            <option value="2">План2</option>
+            <option value="3">План3</option>
+            <option value="4">Создать новый план</option>
+
+                    </select>
+                    </div> 
+                    </li>
+            </td>
+            </tr>
+            </table>	
+                        
+                                <li class="buttons">
+                            <input type="hidden" name="form_id" value="410354" />
+                            
+                            <input id="saveForm" class="button_text" type="button" name="submit" value="Создать" onClick="drawImg();" />
+                            <input class="button_text" type="button" name="hide" value="Отмена" onClick="hideAll();" />
+                            <input class="button_text" type="button" name="back" value="Закрыть форму" onClick="document.location.href='../index.html';" />
+                    </li>
+                        </ul>
+                    </form>	
+                </td>                    
+                <td>
+                    <div id="img-container">
+                        <figure id="ladderc_01" style="display:none;">
+                          <object data="kleen-brus.svg" type="image/svg+xml" id="ladder_01" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Клееный брус</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_02" style="display:none;">
+                          <object data="ocilind-brus.svg" type="image/svg+xml" id="ladder_02" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Оцилиндрованный брус</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_03" style="display:none;">
+                          <object data="neprofil-brus.svg" type="image/svg+xml" id="ladder_03" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Непрофилированный брус</figcaption>
+                        </figure>
+                        
+                        <figure id="ladderc_04" style="display:none;">
+                          <object data="profil-brus.svg" type="image/svg+xml" id="ladder_04" style="width: 100%;">
+                            <p>К сожалению, вы используете устаревшую версию браузера, который не поддерживает SVG.</p>
+                          </object>
+                          <figcaption>Профилированный брус</figcaption>
+                        </figure>
+                    </div>
+                </td>
+            </tr>    
+        </table>    
+        
+        <div id="footer">
+					</div>
+	</div>
+	</body>
+</html>
